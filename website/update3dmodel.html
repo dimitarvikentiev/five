@@ -121,20 +121,16 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview">
+        <li>
           <a href="./index.html">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
-          <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Mathematics</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Geography</a></li>
-          </ul>
         </li>
         <li><a href="./createmodule.html"><i class="fa fa-wrench"></i> <span>Create Module</span></a></li>
-        <li><a href="./update3dmodel.html"><i class="fa fa-file-photo-o"></i> <span>Update 3D Model</span></a></li>
+        <li class="active treeview"><a href="./update3dmodel.html"><i class="fa fa-file-photo-o"></i> <span>Update 3D Model</span></a></li>
         <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
       </ul>
     </section>
@@ -146,7 +142,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Dashboard
+        Update 3D Model
       </h1>
     </section>
 
@@ -154,29 +150,33 @@
     <section class="content">
       <!-- Small boxes (Stat box) -->
       <div class="row">
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-aqua">
-            <div class="inner">
-              <h4>Mathematics</h4><br>
-            </div>
-            <div class="icon">
-              <i class="ion ion-bag"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-green">
-            <div class="inner">
-              <h4>Geography</h4><br>
-            </div>
-            <div class="icon">
-              <i class="ion ion-stats-bars"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+        <div class="col-md-6">
+          <div class="box box-primary">
+          <form role="form">
+              <div class="box-body">
+                  <div class="form-group">
+                    <label>Choose Module</label>
+                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                      <option>Mathematics</option>
+                      <option>Geography</option>
+                      <option>Physics</option>
+                      <option>Chemistry</option>
+                    </select>
+              </div>
+                  <div class="form-group">
+                      <label for="moduleName">3D Model Description</label>
+                      <textarea class="form-control" rows="3" placeholder="Enter description"></textarea>                  
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" id="exampleInputFile">
+                    <p class="help-block">Please select your 3D model file.</p>
+                </div>
+                  <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+              </div>
+          </form>
           </div>
         </div>
         <!-- ./col -->
