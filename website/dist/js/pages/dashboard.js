@@ -122,7 +122,7 @@ $(function () {
     height: '250px'
   });
 
-  /* Morris.js Charts */
+  /* Morris.js Charts
   // Sales chart
   var area = new Morris.Area({
     element: 'revenue-chart',
@@ -144,7 +144,7 @@ $(function () {
     labels: ['Item 1', 'Item 2'],
     lineColors: ['#a0d0e0', '#3c8dbc'],
     hideHover: 'auto'
-  });
+  }); 
   var line = new Morris.Line({
     element: 'line-chart',
     resize: true,
@@ -187,7 +187,7 @@ $(function () {
     ],
     hideHover: 'auto'
   });
-
+*/
   //Fix for charts under tabs
   $('.box ul.nav a').on('shown.bs.tab', function () {
     area.redraw();
